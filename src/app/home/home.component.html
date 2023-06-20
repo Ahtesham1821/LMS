@@ -1,0 +1,52 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+
+        <span>BIAS </span>
+        <a class="navbar">
+            <img src="../assets/image/class.png" alt="" width="60px">
+        </a>
+        <span class="example-spacer"></span>
+
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+            <img src="../assets/image/Slide1.png" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../assets/image/Slide2.png" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../assets/image/Slide3.png" class="d-block w-100" alt="..." height="600px">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container3">
+    <H1>Get Started as a</H1>
+</div>
+<div class="container2">
+    <mat-grid-list cols="3" rowHeight="3:1">
+        <mat-grid-tile><img src="../assets/image/teacher.png" alt="" width="120px"><br><button mat-flat-button
+                color="primary">Teacher
+                Login </button></mat-grid-tile>
+        <mat-grid-tile><img src="../assets/image/students.png" alt="" width="120px">
+            <br>
+            <button mat-flat-button color="primary" (click)="openDialog">Student
+                Login </button></mat-grid-tile>
+        <mat-grid-tile><img src="../assets/image/administrator.png" alt="" width="120px"><br>
+            <button mat-flat-button color="primary">Admin
+                Login </button></mat-grid-tile>
+
+    </mat-grid-list>
+</div>

@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+
+        <span>BIAS </span>
+        <a class="navbar">
+            <img src="../assets/image/class.png" alt="" width="60px">
+        </a>
+        <span class="example-spacer"></span>
+
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="form-control" formControlName="username">
+        <!-- <div *ngIf="loginForm.get('username').invalid && loginForm.get('username').touched">
+            <small class="text-danger">Username is required.</small>
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" formControlName="password">
+        <!-- <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">
+            <small class="text-danger">Password is required.</small>
+        </div> -->
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+</form>
